@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Roboto+Mono:wght@400;700&display=swap');
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -8,6 +9,14 @@ body {
     flex-direction: row;
     min-height: 100vh;
 }
+h2 {
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+}
+
 
 .skills {
     background-color: #fdf7f7;
@@ -19,14 +28,56 @@ body {
     flex-direction: column;
     align-items: center;
     height: 100vh;
-    overflow-y: auto;
-    overflow-x: hidden;
+    overflow: hidden;
+    position: relative;
+}
+
+.skills h2 {
+    z-index: 2;
+    background: #fdf7f7;
+    width: 100%;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+/* Wrap images in a container for animation */
+.skills-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    /* Set height so images start below h2 and fill remaining space */
+    height: calc(100vh - 60px); /* Adjust 60px if needed for header height */
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    /* Animation for infinite vertical scroll */
+}
+
+.skills-images-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    /* Duplicate images for seamless loop */
+    animation: scroll-vertical 20s linear infinite;
+}
+
+@keyframes scroll-vertical {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-30%);
+    }
 }
 
 .skills img {
     height: 100px;
-    margin: 15px 0;
+    width: auto;
     transition: transform 0.3s;
+    background: #fdf7f7;
+    z-index: 1;
 }
 
 .socials {
@@ -76,16 +127,30 @@ body {
 .top-section {
     display: flex;
     align-items: center;
-    gap: 40px;
+    gap: 10px;
 }
 
 .intro h1 {
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
     font-size: 3em;
     margin: 0;
 }
+.intro h3 {
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-size: 1.5em;
+    margin: 10px 0;
+    color: #1d1c1c;
+}
 
 .intro p {
-    font-size: 1.5em;
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 1.3em;
     color: #2a2a2a;
 }
 
@@ -102,7 +167,7 @@ body {
 .bottom-section {
     display: flex;
     gap: 40px;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 .projects, .socials {
@@ -115,4 +180,29 @@ body {
 /* Remove margin-left from .intro, .projects, .socials */
 .intro, .projects, .socials {
     margin-left: 0;
+}
+
+.box {
+    margin-top: 15px;
+    border: 2px solid #4A4459;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 300px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    background: #FFF8F8;
+}
+.box .top-box {
+    background: #4A4459;
+    height: 20px;
+    padding: 5px;
+}
+.box .box-button {
+    background: #E96479;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    margin: 5px;
+}
+.box .bottom-box {
+    padding: 30px;
 }

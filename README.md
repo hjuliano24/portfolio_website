@@ -5,10 +5,15 @@ Look around as you like
 ## Plans 
 My plan is to create this webiste using:
 - React
-- Vite 
+- NextJS
 - Javascript
 - Following a video 
 
 [React JS course](https://youtu.be/Wt3isV2irrA?si=nPkChVwPbEUSj9xw)
 
-### Change of plans need to rebuild the website real quick
+
+>Had to rebuild because using a vite build would require deployment on github pages just doesnt make sense 
+
+>!!! Will be using NextJS for the Build Server 
+
+Note: Plan out build first

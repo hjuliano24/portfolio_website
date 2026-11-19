@@ -16,6 +16,10 @@ Did research on vite or NextJS. Recommended to use Vite because its lightweight 
 
 ### Update 
 Github pages works
+First repo to add is [contact list](https://github.com/hjuliano24/hjuliano-lab3.git) 
+
+- will add a database later for the repo 
+
 
 > !! Current Issues !!
 > None

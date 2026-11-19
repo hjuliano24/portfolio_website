@@ -7,15 +7,27 @@ My plan is to create this webiste using:
 - React
 - Vite
 - Javascript
+- Hosted on Github Pages
 - Following a video 
 
 [React JS course](https://youtu.be/Wt3isV2irrA?si=nPkChVwPbEUSj9xw)
 
-Did research on vite or NextJS. Recommended to use Vite because its lightweight and simple for my use 
+Did research on vite or NextJS. Recommended to use Vite because its lightweight and simple. The best to use for the purposes of this website
 
-> [!! Current Problems]
-> Make sure github pages deployment works.
-> Currently outputs a white screen.
+### Update 
+Github pages works
 
+> !! Current Issues !!
+> None
+
+### Notes for the next project
 Note: Plan out build first
 When deploying build into github actions, make sure it works first.
+Should look into how yaml files work--> Assume it works the same as a Linux build.
+
+## How to test locally 
+```
+cd portfolio
+npm run build
+npm run preview
+````

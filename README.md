@@ -15,7 +15,8 @@ My plan is to create this webiste using:
 Did research on vite or NextJS. Recommended to use Vite because its lightweight and simple. The best to use for the purposes of this website
 
 ### Update 
-Github pages works
+Added UI plan on the design folder. Next step is to design the database if using or not.
+
 First repo to add is [contact list](https://github.com/hjuliano24/hjuliano-lab3.git) 
 
 - will add a database later for the repo 
@@ -26,8 +27,10 @@ First repo to add is [contact list](https://github.com/hjuliano24/hjuliano-lab3.
 
 ### Notes for the next project
 Note: Plan out build first
-When deploying build into github actions, make sure it works first.
-Should look into how yaml files work--> Assume it works the same as a Linux build.
+
+When deploying build into github actions, make sure it works first before building the full app.
+
+Look into how yaml files work--> Assume it works the same as a Linux build.
 
 ## How to test locally 
 ```
